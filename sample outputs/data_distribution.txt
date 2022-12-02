@@ -1,0 +1,13 @@
+The total length of the dataset used for training and testing is 651191
+Starting data exploration...
+For the entire dataset (count and percent):
+{'defacement': 96457, 'benign': 428103, 'phishing': 94111, 'malware': 32520}
+{'defacement': 14.81, 'benign': 65.74, 'phishing': 14.45, 'malware': 4.99}
+
+For the training dataset (count and percent):
+{'defacement': 77209, 'benign': 342272, 'phishing': 75522, 'malware': 25949}
+{'defacement': 14.82, 'benign': 65.7, 'phishing': 14.5, 'malware': 4.98}
+
+For the testing dataset (count and percent):
+{'defacement': 19248, 'benign': 85831, 'phishing': 18589, 'malware': 6571}
+{'defacement': 14.78, 'benign': 65.9, 'phishing': 14.27, 'malware': 5.05}

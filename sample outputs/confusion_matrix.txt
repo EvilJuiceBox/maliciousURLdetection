@@ -1,0 +1,6 @@
+The accuracy of the model is: 0.9399411678314209
+The Confusion Matrix of the model is:
+[[18999   111   122    16]
+ [   51 84980   794     6]
+ [ 1204  4580 12674   131]
+ [  276   153   378  5764]]

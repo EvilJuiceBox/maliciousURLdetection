@@ -1,0 +1,123 @@
+Dataset loaded successfully, peeking at some entries...
+                                                      url        type
+0                                        br-icloud.com.br    phishing
+1                     mp3raid.com/music/krizz_kaliko.html      benign
+2                         bopsecrets.org/rexroth/cr/1.htm      benign
+3       http://www.garage-pirenne.be/index.php?option=...  defacement
+4       http://adventure-nicaragua.net/index.php?optio...  defacement
+...                                                   ...         ...
+651186            xbox360.ign.com/objects/850/850402.html    phishing
+651187       games.teamxbox.com/xbox-360/1860/Dead-Space/    phishing
+651188         www.gamespot.com/xbox360/action/deadspace/    phishing
+651189      en.wikipedia.org/wiki/Dead_Space_(video_game)    phishing
+651190          www.angelfire.com/goth/devilmaycrytonite/    phishing
+
+[651191 rows x 2 columns]
+br-icloud.com.br
+#####################################################
+At index 323712, the url is tensor([119., 105., 110.,  ...,   0.,   0.,   0.]) and the type is 1
+At rawid 323712, the url is en.wikipedia.org/wiki/Mills_College and the type is benign
+The maximum URL length is: 2175
+The indexes are {'defacement': 0, 'benign': 1, 'phishing': 2, 'malware': 3}
+#####################################################
+The total length of the dataset used for training and testing is 651191
+Starting data exploration...
+For the entire dataset (count and percent):
+{'defacement': 96457, 'benign': 428103, 'phishing': 94111, 'malware': 32520}
+{'defacement': 14.81, 'benign': 65.74, 'phishing': 14.45, 'malware': 4.99}
+
+For the training dataset (count and percent):
+{'defacement': 77209, 'benign': 342272, 'phishing': 75522, 'malware': 25949}
+{'defacement': 14.82, 'benign': 65.7, 'phishing': 14.5, 'malware': 4.98}
+
+For the testing dataset (count and percent):
+{'defacement': 19248, 'benign': 85831, 'phishing': 18589, 'malware': 6571}
+{'defacement': 14.78, 'benign': 65.9, 'phishing': 14.27, 'malware': 5.05}
+
+The total number of training samples is 520955, while the total number of test samples is 130239
+
+The time it took to analyse the statistics: 171.4477502
+The shape of the inputs after dataloader is torch.Size([128, 2175]) and the label is torch.Size([128])
+URL is in the form tensor([104., 116., 116.,  ...,   0.,   0.,   0.]), converted: http://bjpgqsc.com/gwzh/class/?0.html&page=2&showtj=&showhot=&key=
+URL_Neural_Net(
+  (conv1): Sequential(
+    (0): Conv1d(1, 256, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): ReLU()
+    (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (conv2): Sequential(
+    (0): Conv1d(256, 256, kernel_size=(3,), stride=(1,))
+    (1): ReLU()
+  )
+  (linear1): Sequential(
+    (0): Flatten(start_dim=1, end_dim=-1)
+    (1): Linear(in_features=277760, out_features=1024, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+  )
+  (classifier): Linear(in_features=1024, out_features=4, bias=True)
+)
+------------------MODEL SUMMARY ---------------------
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv1d-1            [-1, 256, 2175]           1,024
+              ReLU-2            [-1, 256, 2175]               0
+         MaxPool1d-3            [-1, 256, 1087]               0
+            Conv1d-4            [-1, 256, 1085]         196,864
+              ReLU-5            [-1, 256, 1085]               0
+           Flatten-6               [-1, 277760]               0
+            Linear-7                 [-1, 1024]     284,427,264
+              ReLU-8                 [-1, 1024]               0
+           Dropout-9                 [-1, 1024]               0
+           Linear-10                    [-1, 4]           4,100
+================================================================
+Total params: 284,629,252
+Trainable params: 284,629,252
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.01
+Forward/backward pass size (MB): 17.00
+Params size (MB): 1085.77
+Estimated Total Size (MB): 1102.78
+----------------------------------------------------------------
+None
+Starting model training...
+Train loss: 0.45477 | Train accuracy: 0.87
+Test loss: 0.27602 | Test accuracy: 0.90
+Train loss: 0.29300 | Train accuracy: 0.90
+Test loss: 0.23870 | Test accuracy: 0.92
+Train loss: 0.26714 | Train accuracy: 0.91
+Test loss: 0.22008 | Test accuracy: 0.93
+Train loss: 0.25431 | Train accuracy: 0.92
+Test loss: 0.21041 | Test accuracy: 0.93
+Train loss: 0.23583 | Train accuracy: 0.92
+Test loss: 0.20291 | Test accuracy: 0.94
+Train loss: 0.23513 | Train accuracy: 0.93
+Test loss: 0.19979 | Test accuracy: 0.94
+Train loss: 0.21697 | Train accuracy: 0.93
+Test loss: 0.18984 | Test accuracy: 0.94
+Train loss: 0.21608 | Train accuracy: 0.93
+Test loss: 0.19073 | Test accuracy: 0.94
+Train loss: 0.20486 | Train accuracy: 0.93
+Test loss: 0.18254 | Test accuracy: 0.94
+Train loss: 0.20267 | Train accuracy: 0.93
+Test loss: 0.19469 | Test accuracy: 0.94
+Train loss: 0.19921 | Train accuracy: 0.94
+Test loss: 0.18426 | Test accuracy: 0.94
+Train loss: 0.19575 | Train accuracy: 0.94
+Test loss: 0.17827 | Test accuracy: 0.94
+Train loss: 0.19460 | Train accuracy: 0.94
+Test loss: 0.17713 | Test accuracy: 0.95
+Train loss: 0.18837 | Train accuracy: 0.94
+Test loss: 0.19917 | Test accuracy: 0.94
+Train loss: 0.18620 | Train accuracy: 0.94
+Test loss: 0.17745 | Test accuracy: 0.94
+It took 12909.1736506 seconds to train the model!
+The indexes are {'defacement': 0, 'benign': 1, 'phishing': 2, 'malware': 3}
+URL: mcquarrieweb.ca/canadalineups/starchoiceprint.asp?Location=WEST
+	Ground truth: 	benign - 1
+	Model pred: 	1 - benign
+
+
+100%|███████████████████████████████████████████████████████████████████████████████| 15/15 [3:35:09<00:00, 860.61s/it]

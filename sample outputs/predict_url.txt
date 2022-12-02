@@ -1,0 +1,41 @@
+(venv) C:\Users\Veda\Documents\CSE891 Cyber Physical System Security\project>python predict_url.py
+Class labels: {'defacement': 0, 'benign': 1, 'phishing': 2, 'malware': 3}
+URL: www.paypal.com.de-cgi-bin-webscrcmd_login-run-dispatch4404k90u55d0pd0f8e10014.finphotography.com.au/?cmd=_login-run&dispatch=5885d80a13c0db1f8e263663d3faee8deaa77efc63a6eb429928d42bdf5d9d2c
+        Ground truth:   1 - benign
+        Model pred:     1 - benign with confidence [array([0., 1., 0., 0.])]
+
+URL: www.lawa.org/welcomeONT.aspx
+        Ground truth:   2 - phishing
+        Model pred:     2 - phishing with confidence [array([0.   , 0.162, 0.837, 0.   ])]
+
+URL: www.njyztl.com/images/?us.battle.net/login/en/?ref=zqkcrbjus.battle.net/d3/en/index&app=com-d3
+        Ground truth:   1 - benign
+        Model pred:     1 - benign with confidence [array([0.   , 0.999, 0.001, 0.   ])]
+
+URL: canadiancontent.net/people/music/April-Wine.html
+        Ground truth:   1 - benign
+        Model pred:     1 - benign with confidence [array([0.   , 0.953, 0.047, 0.001])]
+
+URL: https://www.finagri.it/wp-content/themes/danfe/aqqcub/6190357/EmploymentVerification_6190357_05072020.zip
+        Ground truth:   3 - malware
+        Model pred:     2 - phishing with confidence [array([0.   , 0.004, 0.98 , 0.016])]
+
+URL: billboard.com/artist/mc-hammer/1035
+        Ground truth:   1 - benign
+        Model pred:     1 - benign with confidence [array([0.   , 0.937, 0.059, 0.003])]
+
+URL: bas-saint-laurent.org/texte.asp?id=966
+        Ground truth:   1 - benign
+        Model pred:     1 - benign with confidence [array([0.006, 0.831, 0.149, 0.014])]
+
+URL: legacy.com/obituaries/houstonchronicle/obituary.aspx?n=ethan-john-fields-ferguson&pid=136168853
+        Ground truth:   1 - benign
+        Model pred:     1 - benign with confidence [array([0.  , 0.97, 0.03, 0.  ])]
+
+URL: namebase.org/main2/John-McCandish-King.html
+        Ground truth:   1 - benign
+        Model pred:     1 - benign with confidence [array([0.   , 0.987, 0.013, 0.   ])]
+
+URL: members.tripod.com/~thethird/tu.html
+        Ground truth:   2 - phishing
+        Model pred:     2 - phishing with confidence [array([0.   , 0.167, 0.81 , 0.023])]

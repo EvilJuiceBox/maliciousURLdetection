@@ -1,0 +1,34 @@
+(venv) C:\Users\Veda\Documents\CSE891 Cyber Physical System Security\project>python predict_by_category.py
+Class labels: {'defacement': 0, 'benign': 1, 'phishing': 2, 'malware': 3}
+################### beginning analysis... #####################
+                Analysis for label: defacement
+URL: http://homesofbr.com/index.php?option=com_properties&view=properties&task=map&id=25&Itemid=97
+        Model pred:     0 - defacement with confidence [array([1., 0., 0., 0.])]
+URL: http://pantherma.eu/index.php?option=com_content&view=article&id=101&Itemid=113&lang=pl&fontstyle=f-smaller
+        Model pred:     0 - defacement with confidence [array([1., 0., 0., 0.])]
+URL: http://ptcanoas.com.br/pt-canoas.html?tmpl=component&print=1&page=
+        Model pred:     0 - defacement with confidence [array([0.987, 0.   , 0.011, 0.002])]
+
+                Analysis for label: benign
+URL: amazon.com/MLB-Vintage-World-Films-Giants/dp/B000FBFYWS
+        Model pred:     1 - benign with confidence [array([0.   , 0.989, 0.011, 0.   ])]
+URL: homepages.rootsweb.ancestry.com/~maryc/front79.htm
+        Model pred:     1 - benign with confidence [array([0.   , 0.986, 0.014, 0.   ])]
+URL: thewrist.wordpress.com/2010/09/28/kaskade-dance-love/
+        Model pred:     1 - benign with confidence [array([0.   , 0.981, 0.019, 0.   ])]
+
+                Analysis for label: phishing
+URL: buyvalidsmtps.com
+        Model pred:     2 - phishing with confidence [array([0.   , 0.   , 0.966, 0.034])]
+URL: http://www.ssaintander15-registrosj.com/
+        Model pred:     2 - phishing with confidence [array([0.005, 0.   , 0.995, 0.   ])]
+URL: www.jbliss.com/pncNet.html
+        Model pred:     2 - phishing with confidence [array([0.   , 0.137, 0.862, 0.001])]
+
+                Analysis for label: malware
+URL: http://industrialtrainingzirakpur.com/web-designing-training-in-zirakpur.html
+        Model pred:     3 - malware with confidence [array([0.315, 0.   , 0.183, 0.501])]
+URL: http://chinesevie.com/index.php?option=com_content&view=section&id=9&Itemid=55&lang=en
+        Model pred:     3 - malware with confidence [array([0.006, 0.002, 0.001, 0.991])]
+URL: https://mitsui-jyuku.mixh.jp/uploads/9484d4fe8115bf6b56a9f2357e2c9e699c5.exe
+        Model pred:     3 - malware with confidence [array([0., 0., 0., 1.])]
